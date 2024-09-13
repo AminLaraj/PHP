@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<script>
+  function submitLink() {
+    var firstname = prompt("Enter your first name:");
+    var lastname = prompt("Enter your last name:");
+    window.location.href = "opdracht 7.2.php?firstname=" + encodeURIComponent(firstname) + "&lastname=" + encodeURIComponent(lastname);
+  }
+</script>
+
+<a href="#" onclick="submitLink()">Click here</a>
+
+</body>
+</html>
